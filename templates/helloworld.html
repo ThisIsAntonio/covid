@@ -5,7 +5,12 @@
         <title></title>
     </head>
     <body>
-        <h1>Hello world</h1>
+        <h1>Hello {{string}}</h1>
+        <ul>
+        {% for mylistitems in mylistitems %}
+            <li>{{ mylistitems }}</li>
+        {% endfor %}
+        <ul>
         <a href="#" class="btn btn-danger">Back</a>
     </body>
 </html>
